@@ -1,0 +1,22 @@
+<h1 class="my-paragraph text-xl text-center font-bold">Lista de productos</h1>
+<table class="table table-striped">
+  <thead class="thead-dark">
+    <tr>
+      <th>Nombre</th>
+      <th>Costo</th>
+      <th>Imagen</th>
+      <th>Eliminar productos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let prod of farmacia">
+      <td>{{ prod.producto }}</td>
+      <td>S/. {{ prod.costo }}</td>
+      <td><img src="{{ prod.foto }}" alt="" width="100"></td>
+      <td>
+        <button class="btn btn-danger" (click)="onClickDelete(prod)">Eliminar</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<button class="btn btn-secondary rounded-lg my-6" (click)="productos()">Añadir productos</button>

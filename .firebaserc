@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "angular25-b4b26"
+  },
+  "targets": {
+    "angular25-b4b26": {
+      "hosting": {
+        "proyecto25": [
+          "angular25-b4b26"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
